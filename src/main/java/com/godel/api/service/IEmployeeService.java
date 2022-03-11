@@ -1,18 +1,19 @@
 package com.godel.api.service;
 
+import com.godel.dto.EmployeeDto;
 import com.godel.model.Employee;
 
 import java.util.List;
 
 public interface IEmployeeService {
 
-    List<Employee> getAll();
+    List<EmployeeDto> getAll();
 
-    Employee get(Long id);
+    EmployeeDto get(Long id);
 
-    void save(Employee employee);
+    void save(EmployeeDto employeeDto);
 
-    void update(Employee employee);
+    void update(EmployeeDto employeeDto);
 
-    void delete(Employee employee);
+    void delete(Long id);
 }

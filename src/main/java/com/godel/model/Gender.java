@@ -6,7 +6,7 @@ import lombok.Getter;
 public enum Gender {
     MALE("Male"),
     FEMALE("Female"),
-    OTHER("Other");
+    OTHER("Other"); // 2022 :)
 
 
     Gender(String name) {

@@ -7,7 +7,6 @@ import java.time.LocalDate;
 
 
 @Data
-@ToString
 public class Employee {
 
     private Long employeeId;

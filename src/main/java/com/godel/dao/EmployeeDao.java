@@ -24,7 +24,7 @@ public class EmployeeDao implements IEmployeeDao {
     @Override
     public Employee get(Long id) {
         return jdbcTemplate.query("SELECT * FROM employee WHERE employee_id=? ", new BeanPropertyRowMapper<>(Employee.class), id)
-                .stream().findAny().orElseThrow(() -> new RuntimeException("null"));
+                .stream().findAny().orElseThrow(() -> new RuntimeException("Employee not found"));
     }
 
     @Override
@@ -40,7 +40,7 @@ public class EmployeeDao implements IEmployeeDao {
     }
 
     @Override
-    public void delete(Employee employee) {
-        jdbcTemplate.update("DELETE FROM employee WHERE employee_id=?", employee.getEmployeeId());
+    public void delete(Long id) {
+        jdbcTemplate.update("DELETE FROM employee WHERE employee_id=?", id);
     }
 }
