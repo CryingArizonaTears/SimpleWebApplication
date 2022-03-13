@@ -12,8 +12,6 @@ import java.time.LocalDate;
 @Data
 public class EmployeeDto {
 
-    @NotNull(message = "Not null")
-    @Min(value = 1, message = "Min > 0")
     private Long employeeId;
     @NotEmpty(message = "Not empty")
     private String firstName;

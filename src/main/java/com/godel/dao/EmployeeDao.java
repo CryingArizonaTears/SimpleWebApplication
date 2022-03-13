@@ -28,8 +28,8 @@ public class EmployeeDao implements IEmployeeDao {
     }
 
     @Override
-    public void save(Employee employee) {
-        jdbcTemplate.update("INSERT INTO employee (first_name, last_name, department_id, job_title, gender, date_of_birth) VALUES(?,?,?,?, cast(? as gender_enum),?)",
+    public Long save(Employee employee) {
+        return jdbcTemplate.queryForObject("INSERT INTO employee (first_name, last_name, department_id, job_title, gender, date_of_birth) VALUES(?,?,?,?, cast(? as gender_enum),?) RETURNING employee_id", Long.class,
                 employee.getFirstName(), employee.getLastName(), employee.getDepartmentId(), employee.getJobTitle(), employee.getGender().toString(), employee.getDateOfBirth());
     }
 

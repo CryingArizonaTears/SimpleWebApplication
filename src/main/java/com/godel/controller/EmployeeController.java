@@ -27,9 +27,8 @@ public class EmployeeController {
     }
 
     @PostMapping
-    public ResponseEntity<Void> create(@RequestBody @Valid EmployeeDto employeeDto) {
-        employeeService.save(employeeDto);
-        return ResponseEntity.ok().build();
+    public ResponseEntity<Long> create(@RequestBody @Valid EmployeeDto employeeDto) {
+        return ResponseEntity.ok(employeeService.save(employeeDto));
     }
 
     @PutMapping

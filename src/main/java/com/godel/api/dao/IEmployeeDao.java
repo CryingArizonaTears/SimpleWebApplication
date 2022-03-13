@@ -10,7 +10,7 @@ public interface IEmployeeDao {
 
     Employee get(Long id);
 
-    void save(Employee employee);
+    Long save(Employee employee);
 
     void update(Employee employee);
 
