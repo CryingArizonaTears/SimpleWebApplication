@@ -39,8 +39,11 @@ public class EmployeeDao implements IEmployeeDao {
 
     @Override
     public Employee update(Long employeeId, Employee employee) {
-        jdbcTemplate.update("UPDATE employee SET first_name=?, last_name=?, department_id=?, job_title=?, gender=cast(? as gender_enum), date_of_birth=? WHERE employee_id=?",
+        int nullOrNotNull = jdbcTemplate.update("UPDATE employee SET first_name=?, last_name=?, department_id=?, job_title=?, gender=cast(? as gender_enum), date_of_birth=? WHERE employee_id=?",
                 employee.getFirstName(), employee.getLastName(), employee.getDepartmentId(), employee.getJobTitle(), employee.getGender().toString(), employee.getDateOfBirth(), employeeId);
+        if (nullOrNotNull == 0) {
+            throw new RuntimeException("Employee not found");
+        }
         employee.setEmployeeId(employeeId);
         return employee;
     }
