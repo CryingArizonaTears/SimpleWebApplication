@@ -15,3 +15,9 @@
 2022-03-13 16:31:34 ERROR ApiExceptionHandler:19 - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Long> EmployeeController.create(EmployeeDto): [Field error in object 'employeeDto' on field 'employeeId': rejected value [null]; codes [NotNull.employeeDto.employeeId,NotNull.employeeId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDto.employeeId,employeeId]; arguments []; default message [employeeId]]; default message [Not null]]
 2022-03-18 22:57:43 ERROR ApiExceptionHandler:19 - org.springframework.dao.TypeMismatchDataAccessException: Type mismatch affecting row number 0 and column type 'employee': Value [(30,test1,test1,1,test1,MALE,2000-11-11)] is of type [org.postgresql.util.PGobject] and cannot be converted to required type [Employee]
 2022-03-21 01:44:27 ERROR ApiExceptionHandler:19 - java.lang.RuntimeException: Employee not found
+2022-03-21 18:01:20 ERROR ApiExceptionHandler:19 - java.lang.RuntimeException: Employee not found
+2022-03-21 19:20:43 ERROR ApiExceptionHandler:19 - java.lang.RuntimeException: Employee not found
+2022-03-21 19:24:21 ERROR ApiExceptionHandler:19 - java.lang.RuntimeException: Employee not found
+2022-03-21 19:28:39 ERROR ApiExceptionHandler:19 - java.lang.RuntimeException: Employee not found
+2022-03-21 19:31:01 ERROR ApiExceptionHandler:19 - java.lang.RuntimeException: Employee not found
+2022-03-21 19:31:07 ERROR ApiExceptionHandler:19 - java.lang.RuntimeException: Employee not found
