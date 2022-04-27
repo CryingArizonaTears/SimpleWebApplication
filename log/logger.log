@@ -21,3 +21,11 @@
 2022-03-21 19:28:39 ERROR ApiExceptionHandler:19 - java.lang.RuntimeException: Employee not found
 2022-03-21 19:31:01 ERROR ApiExceptionHandler:19 - java.lang.RuntimeException: Employee not found
 2022-03-21 19:31:07 ERROR ApiExceptionHandler:19 - java.lang.RuntimeException: Employee not found
+2022-04-24 02:33:41 ERROR ApiExceptionHandler:19 - org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT * FROM employee]; nested exception is org.postgresql.util.PSQLException: ОШИБКА: отношение "employee" не существует
+  Позиция: 15
+2022-04-24 02:40:18 ERROR ApiExceptionHandler:19 - org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT * FROM employee]; nested exception is org.postgresql.util.PSQLException: ОШИБКА: нет доступа к таблице employee
+2022-04-24 02:40:44 ERROR ApiExceptionHandler:19 - org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT * FROM employee]; nested exception is org.postgresql.util.PSQLException: ОШИБКА: нет доступа к таблице employee
+2022-04-24 02:40:45 ERROR ApiExceptionHandler:19 - org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT * FROM employee]; nested exception is org.postgresql.util.PSQLException: ОШИБКА: нет доступа к таблице employee
+2022-04-24 02:43:58 ERROR ApiExceptionHandler:19 - org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT * FROM employee]; nested exception is org.postgresql.util.PSQLException: ОШИБКА: нет доступа к таблице employee
+2022-04-24 02:44:46 ERROR ApiExceptionHandler:19 - org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT * FROM employee]; nested exception is org.postgresql.util.PSQLException: ОШИБКА: нет доступа к таблице employee
+2022-04-24 02:45:08 ERROR ApiExceptionHandler:19 - org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT * FROM employee]; nested exception is org.postgresql.util.PSQLException: ОШИБКА: нет доступа к таблице employee
